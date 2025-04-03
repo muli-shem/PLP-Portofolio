@@ -1,0 +1,138 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    padding-top: 56px;
+}
+
+/* Navbar Styles */
+.navbar-brand {
+    font-size: 1.5rem;
+}
+
+/* Hero/Carousel Styles */
+.carousel-image {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.bg-img-1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../img/carousel-1.jpg');
+}
+
+.bg-img-2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../img/carousel-2.jpg');
+}
+
+.bg-img-3 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../img/carousel-3.jpg');
+}
+
+.carousel-caption {
+    bottom: 30%;
+}
+
+/* Category Cards */
+.category-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.category-icon {
+    font-size: 2.5rem;
+    color: #0d6efd;
+}
+
+/* Product Cards */
+.product-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.product-card .card-img-top {
+    height: 200px;
+    object-fit: contain;
+    padding: 20px;
+}
+
+.quick-view-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.product-card:hover .quick-view-btn {
+    opacity: 1;
+}
+
+.card-img-overlay {
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    transition: opacity 0.3s ease;
+}
+
+.product-card:hover .card-img-overlay {
+    opacity: 1;
+}
+
+.product-price {
+    font-weight: 600;
+    color: #0d6efd;
+}
+
+.product-rating {
+    color: #ffc107;
+}
+
+/* Newsletter Section */
+.bg-secondary {
+    background-color: #343a40 !important;
+}
+
+/* Media Queries */
+@media (max-width: 767px) {
+    .carousel-image {
+        height: 300px !important;
+    }
+    
+    .carousel-caption {
+        bottom: 20%;
+    }
+    
+    .category-icon {
+        font-size: 2rem;
+    }
+}
+
+/* Toast styling */
+.toast-container {
+    z-index: 1060;
+}
+
+/* Modal Styles */
+.product-modal-image {
+    max-height: 300px;
+    object-fit: contain;
+}
+
+/* Footer Styles */
+footer a {
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #0d6efd !important;
+}
